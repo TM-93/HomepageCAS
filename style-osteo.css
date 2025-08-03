@@ -1,0 +1,131 @@
+:root {
+  --main-color: #c7611a ;
+  --text-color: #333;
+  --bg-light: #e6f2fb;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f9f9f9;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--main-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.hero {
+  background: var(--bg-light);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+section {
+  padding: 1.5rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+footer {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--main-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Split-Box Layout (Startseite) */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.split-box {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 🔧 Responsive Styles */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .split-box {
+    width: 90%;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3em;
+  }
+
+  a.button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1rem 0.5rem;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
